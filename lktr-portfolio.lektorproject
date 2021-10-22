@@ -1,5 +1,0 @@
-[project]
-name = lktr-portfolio
-
-[servers.ghpages]
-target = ghpages+https://ShekhovtcovaE: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@ShekhovtcovaE/lktr
