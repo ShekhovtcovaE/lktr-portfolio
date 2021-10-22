@@ -3,4 +3,4 @@ jobs:
   build:
     steps:
       - run: sudo pip install Lektor
-      - run: sudo lektor build -linux
+      - run: circleci local execute --job sudo lektor build
