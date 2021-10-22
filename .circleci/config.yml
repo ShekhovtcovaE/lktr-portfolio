@@ -1,0 +1,6 @@
+version: 2
+jobs:
+  build:
+    steps:
+      - run: sudo pip install Lektor
+      - run: sudo lektor build
