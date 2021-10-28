@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       - node/install-packages:
-        cache-path: ~/webpack
+        cache-path: lktr-portfolio/webpack
         override-ci-command: npm install
       - run: pip install -r requirements.txt
       - run: lektor plugins add webpack-support
