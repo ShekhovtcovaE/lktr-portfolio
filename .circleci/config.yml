@@ -2,5 +2,5 @@ version: 2
 jobs:
   build:
     steps:
-      - run: sudo pip install Lektor
-      - run: sudo lektor circleci local execute --job build
+      - run: pip install -r requirements.txt
+      - run: lektor build -f
