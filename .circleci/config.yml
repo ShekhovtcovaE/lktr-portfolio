@@ -5,4 +5,9 @@ jobs:
       - image: cimg/python:3.6
     steps:
       - run: pip install -r requirements.txt
-      - run: lektor build -f
+      - run:
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install -r requirements.txt
