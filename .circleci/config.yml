@@ -8,6 +8,8 @@ jobs:
       - image: cimg/python:3.6
     steps:
       - checkout
+      - node/install-packages:
+        override-ci-command: npm install
       - run: pip install -r requirements.txt
       - run: lektor plugins add webpack-support
       - run: lektor build -f webpack
