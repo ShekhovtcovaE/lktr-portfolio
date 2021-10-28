@@ -1,4 +1,6 @@
 version: 2
+orbs:
+  python: circleci/python@1.4.0
 jobs:
   build:
     docker:
@@ -6,6 +8,5 @@ jobs:
     steps:
       - checkout
       - run: pip install -r requirements.txt
-      - run: npm install
       - run: lektor plugins add webpack-support
       - run: lektor build -f webpack
