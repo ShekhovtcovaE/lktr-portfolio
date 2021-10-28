@@ -3,3 +3,6 @@ name = lktr-portfolio
 
 [servers.ghpages]
 target = ghpages+https://ShekhovtcovaE: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@ShekhovtcovaE/lktr-portfolio
+
+[packages]
+lektor-webpack-support = 0.5

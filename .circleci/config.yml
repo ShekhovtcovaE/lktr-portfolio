@@ -6,4 +6,4 @@ jobs:
     steps:
       - checkout
       - run: pip install -r requirements.txt
-      - run: lektor build
+      - run: lektor build -f webpack
