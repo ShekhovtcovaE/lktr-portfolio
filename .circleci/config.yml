@@ -8,5 +8,6 @@ jobs:
     steps:
       - checkout
       - run: pip install -r requirements.txt
+      - run: sudo apt install webpack
       - run: lektor plugins add webpack-support
       - run: lektor build -f webpack
