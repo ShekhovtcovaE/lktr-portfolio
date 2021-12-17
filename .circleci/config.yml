@@ -10,6 +10,5 @@ jobs:
       - run: pip install -r requirements.txt
       - run: npm install -g webpack@4.0.0
       - run: npm install webpack-cli
-      - run: cd lktr-portfolio.lektorproject & ls
       - run: lektor plugins add webpack-support
-      - run: ls & lektor build -f webpack
+      - run: ls-la & lektor build -f webpack & pwd
