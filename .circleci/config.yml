@@ -8,6 +8,6 @@ jobs:
     steps:
       - checkout
       - run: pip install -r requirements.txt
-      - run: npm build
+      - run: npm install --save-dev webpack babel-core node-sass babel-loader sass-loader css-loader url-loader style-loader file-loader extract-text-webpack-plugin
       - run: lektor plugins add webpack-support
       - run: lektor build -f webpack
