@@ -14,9 +14,8 @@ jobs:
     docker:
       - image: nikolaik/python-nodejs:python3.8-nodejs16
     steps:
-      - checkout
-      - run: pip install -r requirements.txt
-      - run: lektor deploy ghpages
+      - run: cd content
+      - run: git push origin gh-pages
 workflows:
   build-workflow:
     jobs:
