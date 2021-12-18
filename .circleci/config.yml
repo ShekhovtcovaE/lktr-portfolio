@@ -21,6 +21,7 @@ workflows:
   build-workflow:
     jobs:
       - deploy
+      - build_server_pdfs:
         filters:
           branches:
             only:
