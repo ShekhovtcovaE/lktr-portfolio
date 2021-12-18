@@ -26,8 +26,6 @@ workflows:
               only:
                 - main
       - deploy:
-          requires:
-            - build
           filters:
             branches:
               only: gh-pages
