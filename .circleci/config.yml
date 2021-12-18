@@ -4,7 +4,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: oscarraig/node-python-boto3
+      - image: thejoeejoee/thesaurus-webpack
     steps:
       - checkout
       - run: pip install -r requirements.txt
