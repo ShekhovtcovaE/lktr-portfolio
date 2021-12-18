@@ -6,3 +6,4 @@ target = ghpages+https://ShekhovtcovaE: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@
 
 [packages]
 lektor-webpack-support = 0.5
+
