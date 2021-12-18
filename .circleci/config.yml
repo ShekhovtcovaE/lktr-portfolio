@@ -10,23 +10,5 @@ jobs:
       - run: pip install -r requirements.txt
       - run: npm install -g webpack@4.0.0
       - run: lektor build -f webpack & pwd
-  deploy:
-    docker:
-      - image: nikolaik/python-nodejs:python3.8-nodejs16
-    steps:
-      - run: checkout
-      - run: pip install -r requirements.txt
-      - run: cd content 
-workflows:
-  build-workflow:
-    jobs:
-      - build:
-          filters:
-            branches:
-              only:
-                - main
-      - deploy:
-          filters:
-            branches:
-              only: gh-pages
-      
+      - run: lektor deploy ghpages
+
