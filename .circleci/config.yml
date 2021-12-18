@@ -7,7 +7,7 @@ jobs:
       - image: thejoeejoee/thesaurus-webpack
     steps:
       - checkout
-      - run: python get-pip.py
+      - run: python3 get-pip.py
       - run: pip install -r requirements.txt
       - run: npm install -g webpack@4.0.0
       - run: npm install webpack-cli
