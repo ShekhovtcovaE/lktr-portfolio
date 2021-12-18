@@ -4,10 +4,9 @@ orbs:
 jobs:
   build:
     docker:
-      - image: thejoeejoee/thesaurus-webpack
+      - image: nikolaik/python-nodejs:python3.8-nodejs16
     steps:
       - checkout
-      - run: python3 get-pip.py
       - run: pip install -r requirements.txt
       - run: npm install -g webpack@4.0.0
       - run: npm install webpack-cli
