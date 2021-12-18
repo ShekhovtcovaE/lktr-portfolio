@@ -21,14 +21,15 @@ workflows:
   build-workflow:
     jobs:
       - build:
-        filters:
-          branches:
-            only:
-              - main
-      - deploy-stage:
-        requires:
-          - build
-        filters:
-          branches:
-            only: gh-pages
+          filters:
+            branches:
+              only:
+                - main
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: gh-pages
       
+
