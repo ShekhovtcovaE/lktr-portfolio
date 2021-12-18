@@ -14,7 +14,7 @@ jobs:
     docker:
       - image: nikolaik/python-nodejs:python3.8-nodejs16
     steps:
-      - run: cd content
+      - run: ls
       - run: git push origin gh-pages
 workflows:
   build-workflow:
