@@ -8,10 +8,5 @@ jobs:
     steps:
       - checkout
       - run: pip install -r requirements.txt
-      - run: npm install -g webpack@4.0.0
-      - run: npm install webpack-cli
-      - run: apt-get update
-      - run: apt-get upgrade
-      - run: apt-get install webpack -y
       - run: lektor plugins add webpack-support
       - run: lektor build -f webpack
