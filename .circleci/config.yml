@@ -14,7 +14,7 @@ jobs:
     docker:
       - image: nikolaik/python-nodejs:python3.8-nodejs16
     steps:
-      - run: ls
+      - run: checkout
       - run: pip install -r requirements.txt
       - run: cd content 
 workflows:
