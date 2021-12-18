@@ -20,10 +20,15 @@ jobs:
 workflows:
   build-workflow:
     jobs:
-      - deploy
-      - build_server_pdfs:
+      - build:
         filters:
           branches:
             only:
-              - gh-pages
+              - main
+      - deploy-stage:
+        requires:
+          - build
+        filters:
+          branches:
+            only: gh-pages
       
