@@ -2,7 +2,7 @@
 name = lktr-portfolio
 
 [servers.ghpages]
-target = ghpages+https://ShekhovtcovaE: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@ShekhovtcovaE/lktr-portfolio
+target = ghpages+https://ShekhovtcovaE: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@ShekhovtcovaE/lktr-portfolio
 
 [packages]
 lektor-webpack-support = 0.5
