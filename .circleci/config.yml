@@ -6,6 +6,9 @@ jobs:
     docker:
       - image: nikolaik/python-nodejs:python3.8-nodejs16
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "68:4b:8c:df:4e:63:55:26:9b:b3:23:92:db:ea:cd:28"
       - checkout
       - run: pip install -r requirements.txt
       - run: npm install -g webpack@4.0.0
